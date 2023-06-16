@@ -57,7 +57,6 @@ header {
     background-color: transparent;
     border: none;
     color: white;
-    font-weight: bold;
     transition: background-color 0.3s ease, color 0.3s ease;
     text-align: center;
 }
@@ -223,7 +222,6 @@ footer {
 
 h4 {
     font-size: 20px;
-    font-weight: bold;
 }
 
 ul {
@@ -456,7 +454,7 @@ ul li a:hover {
 
 .image-container3 {
     position: relative;
-    margin: 50px 50px 50px 50px
+    margin: 50px 50px 50px 50px;
 }
 
 .image-container3 img {
@@ -464,6 +462,30 @@ ul li a:hover {
     width: 100%;
     height: auto;
 }
+
+.image-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.image-caption h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-family: "Tiempos Headline";
+}
+
+.image-caption a {
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    font-family: "Founders Grotesk";
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
 
 .overlay-image3 {
     position: absolute;
@@ -502,3 +524,66 @@ ul li a:hover {
     text-align: center;
     color: white;
 }
+
+.colored-div {
+    height: 550px;
+    background-color: #d4e0d5;
+    margin-bottom: 50px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.colored-div h1,
+.colored-div p {
+    margin-left: 50px;
+    font-family: "Founders Grotesk";
+}
+
+.p40 {
+    margin-bottom: 10px;
+    font-family: "Tiempos Headline";
+    font-size: 40px;
+}
+
+.p15 {
+    font-size: 15px;
+}
+
+.colored-container {
+    background-color: #f1eee6;
+    margin: 50px;
+    padding: 50px;
+    text-align: center;
+}
+
+.colored-container img {
+    width: 35px;
+    height: auto;
+}
+
+.text-24 {
+    font-size: 24px;
+    margin-top: 20px;
+    font-family: "Tiempos Headline";
+}
+
+.text-15 {
+    font-size: 15px;
+    margin-top: 10px;
+    font-family: "Founders Grotesk";
+}
+
+.sign-in-link {
+    font-size: 14px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: black;
+    font-family: "Founders Grotesk";
+    border-bottom: 1px solid rgba(255, 1, 1, 0.55);
+}
+
+
+
+
