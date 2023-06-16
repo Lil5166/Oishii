@@ -1,13 +1,16 @@
-/* style.css */
-
 header {
     background-color: transparent;
-    padding: 12px 20px 20px; /* Змінено значення padding-top на 10px */
+    padding: 10px 20px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid white;}
-
+    border-bottom: 1px solid white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
 
 .logo {
     font-family: "Founders Grotesk";
@@ -54,9 +57,8 @@ header {
     background-color: transparent;
     border: none;
     color: white;
-    font-weight: bold;
     transition: background-color 0.3s ease, color 0.3s ease;
-    text-align: center; /* Додано стиль для вирівнювання по центру */
+    text-align: center;
 }
 
 .dropdown-content {
@@ -72,7 +74,6 @@ header {
     font-size: 18px;
     margin-top: 5px;
 }
-
 
 .dropdown:hover .dropdown-content {
     display: block;
@@ -95,9 +96,8 @@ header {
     text-decoration: none;
 }
 
-
 .find-us-button {
-    padding: 8px 30px 8px 30px; /* Збільшено відступ справа */
+    padding: 8px 30px;
     border-radius: 20px;
     background-color: transparent;
     border: 2px solid white;
@@ -107,13 +107,10 @@ header {
     margin-right: 30px;
 }
 
-
-
 .find-us-button:hover {
     background-color: white;
     color: #000;
 }
-
 
 .dropdown button:hover {
     background-color: rgba(255, 255, 255, 0.5);
@@ -127,19 +124,19 @@ header {
 body {
     margin: 0;
     padding: 0;
+    height: auto;
 }
 
 .header {
     height: 77vh;
     font-family: "Founders Grotesk";
-    background-image: url('../rsb.png');
+    background-image: url('../images/strawberry/strb.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-
 .introduction {
-    padding: 55px 60px 20px;
+    padding: 150px 60px 20px;
     font-family: "Tiempos Headline";
     font-size: 40px;
     color: white;
@@ -158,5 +155,435 @@ body {
     color: white;
     text-decoration: none;
     border-bottom: 1px solid white;
-
 }
+
+footer {
+    background-color: #d92924;
+    color: #fff;
+    padding: 70px 0 0;
+    font-size: 14px;
+}
+
+.footer-container {
+    display: flex;
+    max-width: 1200px;
+    margin-left: 100px;
+    align-items: flex-start;
+    margin-top: -30px;
+}
+
+
+.footer-image {
+    margin-right: 200px;
+    margin-left: -50px;
+    flex-shrink: 0;
+    padding: 0 10px 0;
+}
+
+.footer-image img {
+    max-width: 150px;
+    height: auto;
+}
+
+.footer-column {
+    margin-right: 150px;
+}
+
+.footer-column h4 {
+    font-size: 20px;
+    font-family: "Founders Grotesk", sans-serif;
+    margin-bottom: 15px;
+}
+
+.footer-column ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 15px;
+    padding-left: 10px;
+}
+
+
+.footer-column ul li a {
+    font-size: 14px;
+    font-family: "Founders Grotesk", sans-serif;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #888;
+}
+
+
+h4 {
+    font-size: 20px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    color: #888;
+}
+.footer-bottom {
+    background-color: #d92924;
+    text-align: center;
+    height: auto;
+    font-size: 14px;
+    color: #fff;
+}
+
+.footer-bottom .footer-info {
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-bottom .footer-info p {
+    margin: 0;
+}
+
+.footer-bottom .footer-info p span {
+    padding: 0 10px;
+}
+
+.footer-bottom .footer-info p span:last-child {
+    margin-left: auto;
+}
+
+
+
+.footer-bottom .footer-links {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.footer-bottom .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom .footer-links a:hover {
+    color: #888;
+}
+
+
+.footer-bottom .centered-text {
+    text-align: center;
+    flex-grow: 1;
+    padding-bottom: 20px;
+}
+
+.footer-column1 {
+    width: 600px;
+    margin-top: -255px;
+    margin-left: 1000px;
+}
+
+.footer-input {
+    border-radius: 100px;
+    height: 38px;
+    width: 250px;
+    background-color: transparent;
+    border: 1px solid white;
+}
+.footer-input::placeholder {
+    color: white;
+}
+
+.sign-up {
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.55);
+    margin-left: 20px;
+}
+.disclaimer {
+    font-size: 10px;
+    font-family: Arial, serif;
+}
+.footer-h41 {
+    font-family: Poppins;
+    font-size: 20px;
+}
+
+.footer-p1{
+    font-size: 12px;
+    font-family: Poppins;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px;
+}
+
+.image-container img {
+    width: auto;
+    height: 970px;
+}
+
+.image-wrapper {
+    position: relative;
+}
+
+.image-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: -360px;
+    color: white;
+}
+
+.headline {
+    font-family: Tiempos Headline;
+    font-size: 32px;
+    text-align: center;
+}
+
+.subtext {
+    font-family: "Founders Grotesk";
+    font-size: 15px;
+    text-align: center;
+}
+
+.shop-link1 a {
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -100px;
+    margin-left: -30px;
+    position: absolute;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Founders Grotesk;
+}
+
+.shop-link2 a {
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 50px;
+    margin-top: -100px;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: Founders Grotesk;
+    font-size: 14px;
+}
+
+.image-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 100px 0 100px;
+}
+
+.image-row a {
+    display: inline-block;
+    width: auto;
+    height: auto;
+}
+
+.image-row img {
+    width: 50%;
+    height: 100%;
+}
+
+.image-container2 {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.text-container {
+    flex-grow: 1;
+    padding-left: 20px;
+    text-align: left;
+    margin-left: 100px;
+    margin-top: 90px;
+    font-family: Tiempos Headline;
+}
+
+.text-container h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.text-container p {
+    font-size: 24px;
+}
+
+
+.image-wrapper2 {
+    width: 50%;
+    margin-left: 20px
+}
+
+.image-wrapper2 img {
+    width: 94%;
+    height: auto;
+}
+
+.a3 {
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid rgba(255, 1, 1, 0.55);
+}
+
+.image-container3 {
+    position: relative;
+    margin: 50px 50px 50px 50px;
+}
+
+.image-container3 img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.image-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.image-caption h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-family: "Tiempos Headline";
+}
+
+.image-caption a {
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    font-family: "Founders Grotesk";
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+
+.overlay-image3 {
+    position: absolute;
+    margin-top: -600px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 25%;
+    max-height: 200px;
+}
+
+.overlay-content3 {
+    margin-bottom: 50px;
+}
+.overlay-content3 h2 {
+    font-family: "Tiempos Headline";
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.overlay-content3 p {
+    font-family: "Founders Grotesk";
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.overlay-content3 a {
+    font-family: "Founders Grotesk";
+    font-size: 14px;
+    color: white;
+}
+.overlay-content3 {
+    margin-top: -450px;
+    margin-left: 400px;
+    height: 200px;
+    width: 600px;
+    text-align: center;
+    color: white;
+}
+
+.colored-div {
+    height: 550px;
+    background-color: #d4e0d5;
+    margin-bottom: 50px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.colored-div h1,
+.colored-div p {
+    margin-left: 50px;
+    font-family: "Founders Grotesk";
+}
+
+.p40 {
+    margin-bottom: 10px;
+    font-family: "Tiempos Headline";
+    font-size: 40px;
+}
+
+.p15 {
+    font-size: 15px;
+}
+
+.colored-container {
+    background-color: #f1eee6;
+    margin: 50px;
+    padding: 50px;
+    text-align: center;
+}
+
+.colored-container img {
+    width: 35px;
+    height: auto;
+}
+
+.text-24 {
+    font-size: 24px;
+    margin-top: 20px;
+    font-family: "Tiempos Headline";
+}
+
+.text-15 {
+    font-size: 15px;
+    margin-top: 10px;
+    font-family: "Founders Grotesk";
+}
+
+.sign-in-link {
+    font-size: 14px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: black;
+    font-family: "Founders Grotesk";
+    border-bottom: 1px solid rgba(255, 1, 1, 0.55);
+}
+
+
+
+
